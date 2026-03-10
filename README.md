@@ -7,7 +7,12 @@ Curated local skill registry for Codex, Claude Code, Cursor, and other coding ag
 
 This repo packages 1,300+ reusable skills with project-local install scripts, manifest support, and a safer workflow for loading only the skills a project actually needs.
 
-For agents using this repo as a registry: load related skills from `[full local path to the repo]`.
+Add this to the target project's main `AGENTS.md` or `CLAUDE.md`:
+
+```md
+Skills: once requirements are clear, load related skills from `/Users/maxpetrusenko/Desktop/Projects/skills/AGENTS.md`.
+If requirements are not clear yet, ask the user which skill or domain is needed first.
+```
 
 ## Why This Repo
 
