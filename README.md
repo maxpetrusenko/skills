@@ -7,6 +7,8 @@ Curated local skill registry for Codex, Claude Code, Cursor, and other coding ag
 
 This repo packages 1,300+ reusable skills with project-local install scripts, manifest support, and a safer workflow for loading only the skills a project actually needs.
 
+For agents using this repo as a registry: load related skills from `[full local path to the repo]`.
+
 ## Why This Repo
 
 - Large local catalog of practical agent skills
@@ -108,16 +110,17 @@ verification-before-completion
 - Product, planning, and documentation workflows
 - Many vendor and integration-specific skills
 
-Every skill lives in its own folder and is usually rooted at:
+Every skill lives under `skills/` and is usually rooted at:
 
 ```text
-<skill-name>/
-├── SKILL.md
-├── README.md
-├── references/
-├── scripts/
-├── templates/
-└── assets/
+skills/
+└── <skill-name>/
+    ├── SKILL.md
+    ├── README.md
+    ├── references/
+    ├── scripts/
+    ├── templates/
+    └── assets/
 ```
 
 ## Supported Targets
@@ -130,8 +133,8 @@ Every skill lives in its own folder and is usually rooted at:
 ## Repo Structure
 
 ```text
-skills/
-├── <skill-name>/SKILL.md
+repo-root/
+├── skills/<skill-name>/SKILL.md
 ├── scripts/load-skills.sh
 ├── scripts/clear-skills.sh
 ├── AGENTS.md

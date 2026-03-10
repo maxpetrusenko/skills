@@ -78,6 +78,23 @@ trim() {
   printf '%s' "$s"
 }
 
+resolve_skill_src() {
+  local repo_root="$1"
+  local skill="$2"
+
+  if [[ -d "${repo_root}/skills/${skill}" ]]; then
+    printf '%s' "${repo_root}/skills/${skill}"
+    return 0
+  fi
+
+  if [[ -d "${repo_root}/${skill}" ]]; then
+    printf '%s' "${repo_root}/${skill}"
+    return 0
+  fi
+
+  printf '%s' "${repo_root}/skills/${skill}"
+}
+
 parse_targets() {
   local csv="$1"
   local old_ifs="$IFS"
@@ -409,7 +426,7 @@ fi
 declare -a MISSING_SKILLS=()
 declare -a INVALID_SKILLS=()
 for skill in "${SKILLS[@]}"; do
-  src="${SKILLS_REPO}/${skill}"
+  src="$(resolve_skill_src "${SKILLS_REPO}" "${skill}")"
   if [[ ! -d "${src}" ]]; then
     MISSING_SKILLS+=("${skill}")
     continue
@@ -468,7 +485,7 @@ fi
 declare -a INSTALLED=()
 declare -a SKIPPED=()
 for skill in "${SKILLS[@]}"; do
-  src="${SKILLS_REPO}/${skill}"
+  src="$(resolve_skill_src "${SKILLS_REPO}" "${skill}")"
 
   for target in "${TARGETS[@]}"; do
     root="$(dest_for_target "$target")"

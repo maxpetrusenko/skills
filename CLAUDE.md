@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **local skills registry** — 500+ Agent Skills stored centrally and installed into project-local agent directories as needed. Skills are specialized knowledge modules that extend AI capabilities through structured `SKILL.md` files, following the [Agent Skills specification](https://agentskills.io).
+This is a **local skills registry** — 1300+ Agent Skills stored centrally under `skills/` and installed into project-local agent directories as needed. Skills are specialized knowledge modules that extend AI capabilities through structured `SKILL.md` files, following the [Agent Skills specification](https://agentskills.io).
 
 **Key concept**: Skills provide expert knowledge ("knowledge delta") that Claude doesn't already possess. A good skill focuses on decision trees, trade-offs, edge cases, and domain-specific frameworks — not basic concepts or tutorials.
 
@@ -15,16 +15,17 @@ This is a **local skills registry** — 500+ Agent Skills stored centrally and i
 Each skill follows this structure:
 
 ```
-skill-name/
-├── SKILL.md          # Core skill definition with YAML frontmatter (keep <500 lines)
-├── README.md         # Human-facing documentation
-├── references/       # Extended docs loaded on-demand
-├── scripts/          # Implementation code (Python/Node.js)
-├── lib/              # Shared utilities
-├── templates/        # Code templates
-├── assets/           # Static files
-├── package.json      # Node.js dependencies (if applicable)
-└── requirements.txt  # Python dependencies (if applicable)
+skills/
+└── skill-name/
+    ├── SKILL.md          # Core skill definition with YAML frontmatter (keep <500 lines)
+    ├── README.md         # Human-facing documentation
+    ├── references/       # Extended docs loaded on-demand
+    ├── scripts/          # Implementation code (Python/Node.js)
+    ├── lib/              # Shared utilities
+    ├── templates/        # Code templates
+    ├── assets/           # Static files
+    ├── package.json      # Node.js dependencies (if applicable)
+    └── requirements.txt  # Python dependencies (if applicable)
 ```
 
 ### Skill Types by Content Pattern

@@ -52,30 +52,31 @@ https://github.com/OpenLinkSoftware/ai-agent-skills
 
 ## Repository Purpose
 
-This repository is a catalog of **500 local agent skills**.  
-Each skill is an independent module rooted at `<skill-name>/SKILL.md`, usually with optional `references/`, `scripts/`, `assets/`, and templates.
+This repository is a catalog of **1300+ local agent skills**.  
+Each skill is an independent module rooted at `skills/<skill-name>/SKILL.md`, usually with optional `references/`, `scripts/`, `assets/`, and templates.
 
 Core concept: a good skill should add **knowledge delta** (expert trade-offs, edge cases, decision criteria), not generic tutorials.
 
 ## Quick Facts
 
-- Skill count: `500` (`find . -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l`)
+- Skill count: `1347` (`find skills -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l`)
 - Root model docs: `CLAUDE.md`, `AGENTS.md`
 - Each skill is self-contained; there is no monorepo-wide build/test contract
 
 ## Standard Skill Layout
 
 ```text
-skill-name/
-├── SKILL.md          # Required, primary instructions
-├── README.md         # Optional, human-facing docs
-├── references/       # Optional, load on demand
-├── scripts/          # Optional, executable helpers
-├── templates/        # Optional, reusable templates
-├── assets/           # Optional, static assets
-├── lib/              # Optional, shared helpers
-├── package.json      # Optional, Node.js deps
-└── requirements.txt  # Optional, Python deps
+skills/
+└── skill-name/
+    ├── SKILL.md          # Required, primary instructions
+    ├── README.md         # Optional, human-facing docs
+    ├── references/       # Optional, load on demand
+    ├── scripts/          # Optional, executable helpers
+    ├── templates/        # Optional, reusable templates
+    ├── assets/           # Optional, static assets
+    ├── lib/              # Optional, shared helpers
+    ├── package.json      # Optional, Node.js deps
+    └── requirements.txt  # Optional, Python deps
 ```
 
 ## Agent Operating Protocol
@@ -337,20 +338,20 @@ Notes:
 Discover skills:
 
 ```bash
-find . -mindepth 2 -maxdepth 2 -name SKILL.md | sort
+find skills -mindepth 2 -maxdepth 2 -name SKILL.md | sort
 ```
 
 Count skills:
 
 ```bash
-find . -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l
+find skills -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l
 ```
 
 Inspect one skill quickly:
 
 ```bash
-sed -n '1,220p' <skill-name>/SKILL.md
-find <skill-name> -maxdepth 2 -type f | sort
+sed -n '1,220p' skills/<skill-name>/SKILL.md
+find skills/<skill-name> -maxdepth 2 -type f | sort
 ```
 
 ## Notes

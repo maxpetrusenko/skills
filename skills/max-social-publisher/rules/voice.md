@@ -9,6 +9,27 @@
 - Sound like a builder who shipped.
 - Imply follow or reply interest; never ask for it directly.
 
+## Draft Mix
+
+Target weighting:
+
+- 60% product outcome
+- 30% technical depth
+- 10% contrarian tension
+
+Every draft should satisfy both:
+
+- understandable by non-engineers in under 5 seconds
+- rewarding to technical readers with at least one real signal
+
+## Angle Library
+
+1. outcome-first
+2. workflow compression
+3. builder insight
+4. technical proof
+5. contrarian truth
+
 ## Avoid
 
 - "super excited"
@@ -17,15 +38,6 @@
 - generic hype
 - long feature lists
 - obvious growth-bait CTAs
-
-## Quality Bar
-
-A good post should:
-
-- communicate user value immediately
-- contain one real technical signal
-- feel like a shipped artifact, not marketing copy
-- make the URL feel like the natural next click
 
 ## Failure Modes
 
