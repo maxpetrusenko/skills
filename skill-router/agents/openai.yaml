@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Router"
+  short_description: "Selects and loads only task-relevant skills from offline library"
+  default_prompt: "Use $skill-router to load only the needed skill(s) for this task."
+
+policy:
+  allow_implicit_invocation: false
