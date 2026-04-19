@@ -31,14 +31,14 @@ For more information, see https://github.com/browser-use/browser-use/blob/main/b
 ```bash
 browser-use --browser chromium open <url>      # Default: headless Chromium
 browser-use --browser chromium --headed open <url>  # Visible Chromium window
-browser-use --browser real open <url>          # Real Chrome (no profile = fresh)
-browser-use --browser real --profile "Default" open <url>  # Real Chrome with your login sessions
-browser-use --browser remote open <url>        # Cloud browser
+browser-use --headed open <url>                # Visible managed Chromium
+browser-use --profile "Person 1" open <url>    # Real Chrome with existing login sessions
+browser-use cloud connect                      # Cloud browser
 ```
 
 - **chromium**: Fast, isolated, headless by default
-- **real**: Uses a real Chrome binary. Without `--profile`, uses a persistent but empty CLI profile at `~/.config/browseruse/profiles/cli/`. With `--profile "ProfileName"`, copies your actual Chrome profile (cookies, logins, extensions)
-- **remote**: Cloud-hosted browser with proxy support
+- **real Chrome profile**: Use global `--profile "ProfileName"` before the command. `browser-use profile list` shows available names.
+- **cloud**: Use `browser-use cloud ...` commands. Requires a Browser Use API key.
 
 ## Essential Commands
 
@@ -343,13 +343,13 @@ Use when a task requires browsing a site the user is already logged into (e.g. G
 #### Step 1: Check existing profiles
 
 ```bash
-# Option A: Local Chrome profiles (--browser real)
-browser-use -b real profile list
+# Option A: Local Chrome profiles
+browser-use profile list
 # → Default: Person 1 (user@gmail.com)
 # → Profile 1: Work (work@company.com)
 
-# Option B: Cloud profiles (--browser remote)
-browser-use -b remote profile list
+# Option B: Cloud profiles
+browser-use cloud v2 GET /profiles
 # → abc-123: "Chrome - Default (github.com)"
 # → def-456: "Work profile"
 ```
@@ -358,10 +358,11 @@ browser-use -b remote profile list
 
 ```bash
 # Real browser — uses local Chrome with existing login sessions
-browser-use --browser real --profile "Default" open https://github.com
+browser-use --session auth --profile "Person 1" open https://github.com
+browser-use --session auth state
 
 # Cloud browser — uses cloud profile with synced cookies
-browser-use --browser remote --profile abc-123 open https://github.com
+browser-use cloud connect
 ```
 
 The user is already authenticated — no login needed.
@@ -379,7 +380,7 @@ If the user wants to use a cloud browser but no cloud profile has the right cook
 
 **Check what cookies a local profile has:**
 ```bash
-browser-use -b real profile cookies "Default"
+browser-use profile inspect --browser "Google Chrome" --profile "Person 1"
 # → youtube.com: 23
 # → google.com: 18
 # → github.com: 2
@@ -402,13 +403,13 @@ Only use when the user explicitly needs their entire browser state.
 **Fine-grained control (advanced):**
 ```bash
 # Export cookies to file, manually edit, then import
-browser-use --browser real --profile "Default" cookies export /tmp/cookies.json
-browser-use --browser remote --profile <id> cookies import /tmp/cookies.json
+browser-use --profile "Person 1" cookies export /tmp/cookies.json
+browser-use cloud v2 POST /profiles/<id>/cookies @/tmp/cookies.json
 ```
 
 **Use the synced profile:**
 ```bash
-browser-use --browser remote --profile <id> open https://github.com
+browser-use cloud connect
 ```
 
 ### Running Subagents
