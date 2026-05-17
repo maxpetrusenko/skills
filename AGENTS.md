@@ -84,6 +84,8 @@ skills/
 1. Discover first:
    - Read target skill `SKILL.md` before touching `references/`.
    - Load only the minimum files needed for the current task.
+   - For target-project skill selection, prefer `skills/skill-runtime` first.
+   - Default resolver flow: `suggest` -> `apply --mode merge` -> `load --dry-run` -> real `load` only on explicit request.
 2. Prefer existing tooling:
    - If `scripts/` exists, run or patch scripts instead of re-implementing logic in chat.
    - If templates/assets exist, reuse them.
@@ -109,6 +111,37 @@ Prioritize skills that provide:
 - domain-specific workflows,
 - non-obvious implementation trade-offs,
 - advanced tool behavior and failure modes.
+
+Doc-workflow alias rules:
+- use `visual-presearch-workflow` for one polished presearch / architecture artifact
+- use `presearch-pipeline` for multi-doc presearch, deep dives, Codex review, or `make this 10/10`
+- natural triggers include `generate presearch for this project` and `research this repo and make architecture docs`
+
+AI project default:
+- any project with model calls should include LangSmith in the plan, docs, and rating unless explicitly scoped out
+- prefer `langsmith-fetch` for trace debugging and `llm-evaluation` for eval design
+- rater/presearch outputs should call out missing LangSmith observability as a concrete gap
+
+## App rating (`requirements-ui-app-rater`)
+
+Controller: `skills/requirements-ui-app-rater/SKILL.md`. Index: `skills/requirements-ui-app-rater/INDEX.md`.
+
+| Trigger | Load |
+| --- | --- |
+| rate app, take-home, rubric, requirements matrix | controller + `rating-requirements.md` |
+| score UI / UX audit | `rating-ui-ux.md` |
+| QA / edge cases / E2E | `rating-qa.md` |
+| code cleanliness / React Doctor | `rating-engineering.md` |
+| deploy / hosted URL / prod vs repo | `rating-deployment.md` |
+| 10/10 / submission ready | `rating-submission-10.md` + `references/take-home-submission-10.md` |
+
+Full rating: all six category subskills in workflow order in the controller.
+
+## Brain operations
+
+| Trigger | Skill |
+| --- | --- |
+| cinematic scrollytelling video hero, scroll-controlled MP4, sticky story cards | `skills/cinematic-scroll-scrub/SKILL.md` |
 
 Avoid loading skills for baseline knowledge already in model memory (language basics, framework fundamentals, simple CRUD).
 
@@ -173,6 +206,7 @@ Manifest files in target project:
 
 Resolution rules:
 
+0. Use `skills/skill-runtime` to rank candidates against the active repo and task before finalizing manifests.
 1. Start from requirements and map each requirement to at least one skill.
 2. Put blockers in `skills.must.txt`; optional improvements in `skills.good.txt`.
 3. Build `skills.task.txt` as:
@@ -232,8 +266,8 @@ Workflow:
    - Read `SKILL.md`
    - Inspect `scripts/`, `package.json`, `requirements.txt`
 4. Vendor into local registry:
-   - Copy approved skill into `/Users/maxpetrusenko/Desktop/Projects/skills/`
-   - Pin source to commit SHA or release tag in project notes
+   - Use `scripts/vendor-skill.py` with a pinned Git SHA or commit URL
+   - Keep `SYNC.md` with source path, pinned URL, and sync date
 5. Load into projects only with local scripts:
    - `scripts/load-skills.sh` with explicit `--manifest`, `--strict-manifest`, and project-local `--codex-home`
 
@@ -299,6 +333,8 @@ EOF
 
 cat > /absolute/path/to/target-project/.agents/skills.good.txt <<'EOF'
 # Optional quality/ops improvements
+langsmith-fetch
+llm-evaluation
 python-observability
 logging-best-practices
 error-handling-patterns
