@@ -1,14 +1,6 @@
 ---
 name: google-tts
-description: |
-  Convert documents and text to audio using Google Cloud Text-to-Speech.
-  Use this skill when the user wants to: narrate a document, read aloud text,
-  generate audio from a file, convert text to speech, create a recording
-  of documentation or analysis, create a podcast from a document, or use
-  Google TTS/text-to-speech. Trigger phrases: "read this aloud", "narrate this",
-  "create a recording", "text to speech", "TTS", "convert to audio",
-  "audio from document", "listen to this", "generate audio", "google tts",
-  "create a podcast".
+description: "Use for Convert documents and text to audio using Google Cloud Text-to-Speech"
 ---
 
 # Google Cloud Text-to-Speech

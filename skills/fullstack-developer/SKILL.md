@@ -1,10 +1,6 @@
 ---
 name: fullstack-developer
-description: |
-  Modern web development expertise covering React, Node.js, databases, and full-stack architecture.
-  Use when: building web applications, developing APIs, creating frontends, setting up databases,
-  deploying web apps, or when user mentions React, Next.js, Express, REST API, GraphQL, MongoDB,
-  PostgreSQL, or full-stack development.
+description: "Use for Modern web development expertise covering React, Node.js, databases, and full-stack architecture"
 license: MIT
 metadata:
   author: awesome-llm-apps

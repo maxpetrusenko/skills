@@ -1,12 +1,6 @@
 ---
 name: e2e-testing
-description: >-
-  End-to-end testing patterns with Playwright for full-stack Python/React applications.
-  Use when writing E2E tests for complete user workflows (login, CRUD, navigation),
-  critical path regression tests, or cross-browser validation. Covers test structure,
-  page object model, selector strategy (data-testid > role > label), wait strategies,
-  auth state reuse, test data management, and CI integration. Does NOT cover unit tests
-  or component tests (use pytest-patterns or react-testing-patterns).
+description: "Use for End-to-end testing patterns with Playwright for full-stack Python/React applications"
 license: MIT
 compatibility: 'Playwright 1.40+, Node.js 20+'
 metadata:

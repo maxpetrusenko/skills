@@ -1,6 +1,6 @@
 ---
 name: baoyu-markdown-to-html
-description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, and infographics. Use when user asks for "markdown to html", "convert md to html", "md转html", or needs styled HTML output from markdown.
+description: "Use for Converts Markdown to styled HTML with WeChat-compatible themes"
 ---
 
 # Markdown to HTML Converter

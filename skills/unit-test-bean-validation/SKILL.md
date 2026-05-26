@@ -1,6 +1,6 @@
 ---
 name: unit-test-bean-validation
-description: Provides patterns for unit testing Jakarta Bean Validation (@Valid, @NotNull, @Min, @Max, etc.) with custom validators and constraint violations. Validates logic without Spring context. Use when ensuring data integrity and validation rules are correct.
+description: "Use for Provides patterns for unit testing Jakarta Bean Validation (@Valid, @NotNull, @Min, @Max, etc.) with custom validators and constraint violations"
 allowed-tools: Read, Write, Bash, Glob, Grep
 ---
 

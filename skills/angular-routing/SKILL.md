@@ -1,6 +1,6 @@
 ---
 name: angular-routing
-description: Implement routing in Angular v20+ applications with lazy loading, functional guards, resolvers, and route parameters. Use for navigation setup, protected routes, route-based data loading, and nested routing. Triggers on route configuration, adding authentication guards, implementing lazy loading, or reading route parameters with signals.
+description: "Use for Implement routing in Angular v20+ applications with lazy loading, functional guards, resolvers, and route parameters"
 ---
 
 # Angular Routing

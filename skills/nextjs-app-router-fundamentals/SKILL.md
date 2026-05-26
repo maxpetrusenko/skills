@@ -1,6 +1,6 @@
 ---
 name: nextjs-app-router-fundamentals
-description: Guide for working with Next.js App Router (Next.js 13+). Use when migrating from Pages Router to App Router, creating layouts, implementing routing, handling metadata, or building Next.js 13+ applications. Activates for App Router migration, layout creation, routing patterns, or Next.js 13+ development tasks.
+description: "Use for Guide for working with Next.js App Router (Next.js 13+)"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 

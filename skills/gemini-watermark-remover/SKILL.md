@@ -1,6 +1,6 @@
 ---
 name: gemini-watermark-remover
-description: Remove the visible Gemini AI watermark from images using reverse alpha blending. Use when asked to strip Gemini watermarks, batch-process Gemini images, or build/modify a CLI script that removes the bottom-right Gemini watermark without HTML or server-side components.
+description: "Use for Remove the visible Gemini AI watermark from images using reverse alpha blending"
 ---
 
 # Gemini Watermark Remover

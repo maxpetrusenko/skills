@@ -1,6 +1,6 @@
 ---
 name: self-learning
-description: "Autonomous skill generator that learns new technologies from the web. Use when, users want to learn about a new library/framework/tool, need to create a skill for an unfamiliar technology, want to research and document a technology's usage patterns, or invoke with `/learn <topic>`. This skill uses web search and browser tools to discover, extract, and synthesize documentation into a reusable skill."
+description: "Use for Autonomous skill generator that learns new technologies from the web"
 ---
 
 # Self-Learning Skill Generator

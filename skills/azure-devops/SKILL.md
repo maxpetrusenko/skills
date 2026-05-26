@@ -1,11 +1,6 @@
 ---
 name: azure-devops
-description: |
-  Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts,
-  variable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage
-  sprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages,
-  check security alerts, manage variable groups, approve deployments, or configure branch policies.
-  Covers 13 domains with 99 tools via REST API.
+description: "Use for Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts, variable groups, environments/approvals, branch policies, and attachments"
 license: Apache-2.0
 metadata:
   author: sanjay3290

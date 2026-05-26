@@ -1,6 +1,6 @@
 ---
 name: music-downloader
-description: This skill should be used when users need to download audio or music from online platforms like YouTube, SoundCloud, Spotify, or other streaming services. It provides yt-dlp and spotdl command templates for high-quality audio extraction, playlist downloads, metadata embedding, and multi-platform support.
+description: "Use for users need to download audio or music from online platforms like YouTube, SoundCloud, Spotify, or other streaming services"
 ---
 
 # Music Downloader

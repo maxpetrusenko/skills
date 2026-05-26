@@ -1,6 +1,6 @@
 ---
 name: google-search-browser-use
-description: Use browser-use to perform Google searches, open results, and extract key information from live pages. Use when the user asks to "search Google", "look this up on Google", or needs current web results via a real browser session (often to avoid bot blocks).
+description: "Use for Use browser-use to perform Google searches, open results, and extract key information from live pages"
 ---
 
 # Google Search Browser Use

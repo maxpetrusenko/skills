@@ -1,6 +1,6 @@
 ---
 name: backlink-analyzer
-description: 'Use when the user asks to "analyze backlinks", "check link profile", "find toxic links", "link building opportunities", "off-page SEO", "who links to me", "I have spammy links", "how do I get more backlinks", or "disavow links". Analyzes backlink profiles to understand link authority, identify toxic links, discover link building opportunities, and monitor competitor link acquisition. Essential for off-page SEO strategy. For internal link analysis, see internal-linking-optimizer. For competitor link profiles, see competitor-analysis.'
+description: "Use for the user asks to \"analyze backlinks\", \"check link profile\", \"find toxic links\", \"link building opportunities\", \"off-page SEO\", \"who links to me\", \"I have spammy links\", \"how do I get more backlinks\", or \"disavow links\""
 license: Apache-2.0
 metadata:
   author: aaron-he-zhu

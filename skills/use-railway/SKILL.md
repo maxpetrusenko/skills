@@ -1,12 +1,6 @@
 ---
 name: use-railway
-description: >
-  Operate Railway infrastructure: create projects, provision services and
-  databases, deploy code, configure environments and variables, manage domains,
-  troubleshoot failures, check status and metrics, and query Railway docs. Use
-  this skill whenever the user mentions Railway, deployments, services,
-  environments, build failures, or infrastructure operations, even if they don't
-  say "Railway" explicitly.
+description: "Use for Operate Railway infrastructure: create projects, provision services and databases, deploy code, configure environments and variables, manage domains, troubleshoot failures, check status and metrics, and query Railway docs"
 allowed-tools: Bash(railway:*), Bash(which:*), Bash(command:*), Bash(npm:*), Bash(npx:*), Bash(curl:*)
 ---
 

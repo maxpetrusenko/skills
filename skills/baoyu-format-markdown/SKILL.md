@@ -1,6 +1,6 @@
 ---
 name: baoyu-format-markdown
-description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {filename}-formatted.md.
+description: "Use for Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks"
 ---
 
 # Markdown Formatter

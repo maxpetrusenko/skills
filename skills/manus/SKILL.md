@@ -1,6 +1,6 @@
 ---
 name: manus
-description: Delegate complex, long-running tasks to Manus AI agent for autonomous execution. Use when user says 'use manus', 'delegate to manus', 'send to manus', 'have manus do', 'ask manus', 'check manus sessions', or when tasks require deep web research, market analysis, product comparisons, stock analysis, competitive research, document generation, data analysis, or multi-step workflows that benefit from autonomous agent execution with parallel processing.
+description: "Use for Delegate complex, long-running tasks to Manus AI agent for autonomous execution"
 license: Apache-2.0
 metadata:
   author: sanjay3290

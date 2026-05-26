@@ -1,12 +1,6 @@
 ---
 name: recommendations
-description: 'TasteRay API integration for personalized recommendations across verticals
-  (movies, restaurants, products, travel, jobs). Use when you need to: (1) recommend
-  movies, restaurants, products, travel, or jobs, (2) answer "what would I like" questions,
-  (3) provide personalized recommendations based on preferences, (4) rank or score
-  items for a user, (5) explain why something matches a user''s taste, (6) build recommendation
-  context from conversation, (7) integrate psychological profiles with recommendation
-  systems.'
+description: "Use for TasteRay API integration for personalized recommendations across verticals (movies, restaurants, products, travel, jobs)"
 license: MIT
 metadata:
   author: tasteray

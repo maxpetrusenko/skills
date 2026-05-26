@@ -1,6 +1,6 @@
 ---
 name: seedance2-api
-description: Out-of-the-box Seedance 2.0 API skill — just one API key to generate AI videos. Builds storyboards, generates reference images with Seedream 4.5, submits video tasks, and polls results. Supports both MCP and standalone Python script mode. Use when the user mentions seedance, AI video, storyboard, or video generation.
+description: "Use for Out-of-the-box Seedance 2.0 API skill — just one API key to generate AI videos"
 license: MIT
 compatibility: Requires Python 3.8+ with requests. Works with Cursor, Claude Code, or any SKILL.md-compatible agent.
 metadata:

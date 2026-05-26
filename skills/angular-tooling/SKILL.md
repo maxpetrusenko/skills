@@ -1,6 +1,6 @@
 ---
 name: angular-tooling
-description: Use Angular CLI and development tools effectively in Angular v20+ projects. Use for project setup, code generation, building, testing, and configuration. Triggers on creating new projects, generating components/services/modules, configuring builds, running tests, or optimizing production builds.
+description: "Use for Use Angular CLI and development tools effectively in Angular v20+ projects"
 ---
 
 # Angular Tooling

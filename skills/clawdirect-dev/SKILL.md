@@ -1,6 +1,6 @@
 ---
 name: clawdirect-dev
-description: Build agent-facing web experiences with ATXP-based authentication, following the ClawDirect pattern. Use this skill when building websites that AI agents interact with via MCP tools, implementing cookie-based agent auth, or creating agent skills for web apps. Provides templates using @longrun/turtle, Express, SQLite, and ATXP.
+description: "Use for Build agent-facing web experiences with ATXP-based authentication, following the ClawDirect pattern"
 ---
 
 # ClawDirect-Dev

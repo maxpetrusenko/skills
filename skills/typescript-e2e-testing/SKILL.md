@@ -1,7 +1,6 @@
 ---
 name: typescript-e2e-testing
-description: |
-  E2E and integration testing skill for TypeScript/NestJS with Jest and real infrastructure (Docker: Kafka/Redpanda, PostgreSQL, MongoDB, Redis). Use for setting up E2E stacks (docker-compose, jest-e2e config, .env.e2e, helpers, test/e2e structure), writing `.e2e-spec.ts` tests with Given-When-Then (GWT), reviewing test quality/isolation/assertions, running and interpreting E2E results, debugging flaky/failing tests (timeouts, race conditions, service connectivity, Kafka consumption), and optimizing test speed (startup time, cleanup cost, smart polling, safe parallelization). Keywords: e2e, integration test, NestJS, Jest, supertest, test/e2e, docker-compose, GWT, flaky test, MSW, nock.
+description: "Use for E2E and integration testing skill for TypeScript/NestJS with Jest and real infrastructure (Docker: Kafka/Redpanda, PostgreSQL, MongoDB, Redis)"
 ---
 
 # E2E Testing Skill

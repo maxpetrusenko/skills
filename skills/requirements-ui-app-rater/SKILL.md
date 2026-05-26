@@ -1,6 +1,6 @@
 ---
 name: requirements-ui-app-rater
-description: Use when rating, judging, or auditing an app/prototype/take-home against requirements, UI/UX, QA/reliability, code cleanliness, deployment, and product judgment. Orchestrates category subskills with evidence-backed matrices, live testing, and scored reporting. For government/regulatory apps, load government-regulated lens reference. For 10/10 submission gate, load rating-submission-10 subskill.
+description: "Use for rating, judging, or auditing an app/prototype/take-home against requirements, UI/UX, QA/reliability, code cleanliness, deployment, and product judgment"
 version: 1.2.0
 author: Hermes Agent
 license: MIT

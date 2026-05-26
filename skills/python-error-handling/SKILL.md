@@ -1,6 +1,6 @@
 ---
 name: python-error-handling
-description: Python error handling patterns including input validation, exception hierarchies, and partial failure handling. Use when implementing validation logic, designing exception strategies, handling batch processing failures, or building robust APIs.
+description: "Use for Python error handling patterns including input validation, exception hierarchies, and partial failure handling"
 ---
 
 # Python Error Handling
