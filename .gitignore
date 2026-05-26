@@ -3,3 +3,9 @@
 .agents/
 .claude/
 .codex/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+skills/max-social-publisher/data/
+skills/max-social-publisher/rules/dedup-store.json
