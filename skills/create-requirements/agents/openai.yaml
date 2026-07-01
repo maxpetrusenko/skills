@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Requirements"
+  short_description: "Research comparable apps and generate 9+/10 requirements packs"
+  default_prompt: "Use $create-requirements to research comparable products, synthesize spec/presearch/PRD/UI flows, render requirements.pdf, and pass the 9+/10 quality gate."
