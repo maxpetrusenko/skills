@@ -1,0 +1,50 @@
+{
+  "hook": "You can't read this while driving.",
+  "beats": [
+    {
+      "text": "The Listen link appears.",
+      "terminal": {
+        "title": "claude",
+        "lines": [
+          "> fix the flaky billing webhook retries",
+          "  Edit src/billing/webhook.ts",
+          "  Bash pnpm test",
+          "Fixed the flaky webhook retries. The retry counter reset on every 5xx.",
+          "Listen: https://<host>.<tailnet>.ts.net:8443/b/<id>"
+        ],
+        "highlight": 4
+      },
+      "dur": 5.0
+    },
+    {
+      "text": "Play original. Play edited.",
+      "image": "assets/card-390.png",
+      "frame": "phone"
+    },
+    {
+      "text": "Written for the ear.",
+      "sub": "Rewritten as something you would say out loud, then spoken.",
+      "image": "assets/card-390-transcript.png",
+      "frame": "phone"
+    }
+  ],
+  "end": {
+    "name": "earshot",
+    "tag": "Hear what your agent did.",
+    "url": "github.com/maxpetrusenko/earshot"
+  },
+  "palette": {},
+  "font": {
+    "display": "newsreader",
+    "body": "source-sans-3",
+    "mono": "ibm-plex-mono"
+  },
+  "formats": [
+    "1080x1350"
+  ],
+  "still": {
+    "headline": "Hear what your agent did.",
+    "image": "assets/card-390.png",
+    "frame": "phone"
+  }
+}
