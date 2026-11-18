@@ -3,6 +3,8 @@ name: explainer-visuals
 description: Make or review a visual explainer image for an agent reply: a before/after, a state key, a timing comparison, a layered architecture, or a decision to make no image at all. Use for "visual explainer", "explain image", "earshot image", "before/after visual", "what changed picture", "make a diagram of this reply", or when judging whether an explainer image is good enough to ship.
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # explainer-visuals
 
 One reply in, zero to three phone-sized images out. The picture must make the change visible before anyone reads a word. A picture that reads like a formatted summary has failed, even when every fact in it is right.
