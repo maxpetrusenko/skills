@@ -3,6 +3,8 @@ name: post-media
 description: Make post media with HyperFrames, Max's default generator for every post video, still image and explainer. Use for any request to make media for a post, launch, explainer, an X or LinkedIn video, or "make a video/image for this". Renders 1080x1350, 1080x1920, 1920x1080 video and 1080x1350 / 1600x900 PNG stills from a post.json.
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # post-media
 
 HyperFrames (HTML to video) behind a `post.json`. Light mode, real font, real proof assets, one hook, 2 to 4 beats, an end card. Reference: earshot's `video/`.

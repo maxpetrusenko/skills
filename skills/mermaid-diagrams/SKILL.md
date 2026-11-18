@@ -3,6 +3,8 @@ name: mermaid-diagrams
 description: "Use for guide for creating software diagrams using Mermaid syntax"
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # Mermaid Diagramming
 
 Create professional software diagrams using Mermaid's text-based syntax. Mermaid renders diagrams from simple text definitions, making diagrams version-controllable, easy to update, and maintainable alongside code.
