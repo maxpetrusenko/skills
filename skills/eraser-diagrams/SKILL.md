@@ -10,6 +10,8 @@ metadata:
   tags: diagram, architecture, infrastructure, visualization, terraform, aws, azure, cloud
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # Eraser Diagram Generator
 
 Generates professional architecture diagrams directly from code, infrastructure files, or natural language descriptions using the Eraser API.

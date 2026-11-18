@@ -3,6 +3,8 @@ name: visual-design-foundations
 description: Apply typography, color theory, spacing systems, and iconography principles to create cohesive visual designs. Use when establishing design tokens, building style guides, or improving visual hierarchy and consistency.
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # Visual Design Foundations
 
 Build cohesive, accessible visual systems using typography, color, spacing, and iconography fundamentals.

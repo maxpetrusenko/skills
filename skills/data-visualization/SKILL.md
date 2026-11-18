@@ -3,6 +3,8 @@ name: data-visualization
 description: "Use for Create effective data visualizations with Python (matplotlib, seaborn, plotly)"
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # Data Visualization Skill
 
 Chart selection guidance, Python visualization code patterns, design principles, and accessibility considerations for creating effective data visualizations.

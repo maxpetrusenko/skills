@@ -3,6 +3,8 @@ name: youtube-downloader
 description: "Use for Download YouTube videos with customizable quality and format options"
 ---
 
+> Part of the visual family. Routing, the director pass and the review gate live in `visual-studio`; use it first when unsure.
+
 # YouTube Video Downloader
 
 Download YouTube videos with full control over quality and format settings.
